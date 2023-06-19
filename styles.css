@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Apply box-sizing to all elements, reset margins and paddings */
+  }
+  
+  body {
+    background-color: lightblue;
+    /* Set the background color of the body */
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 6rem 0;
+    background-color: lightyellow;
+    height: 5rem;
+    padding-right: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* Styling for the navigation bar */
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: inherit;
+    /* Styling for the navigation links */
+  }
+  
+  #navbar > div {
+    height: 100%;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    /* Styling for individual navigation items */
+  }
+  
+  #navbar > div:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    /* Styling for the navigation items on hover */
+  }
+  
+  main {
+    background-color: skyblue;
+    text-align: center;
+    margin-top: 4.77rem;
+    /* Styling for the main content section */
+  }
+  
+  #welcome-section {
+    background-color: violet;
+    padding-top: 2rem;
+    /* Styling for the welcome section */
+  }
+  
+  #welcome-section > h1 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    /* Styling for the welcome section heading */
+  }
+  
+  #welcome-section > p {
+    width: 50%;
+    margin: 0 auto 1rem auto;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    /* Styling for the welcome section paragraphs */
+  }
+  
+  #projects {
+    background-color: lightgreen;
+    margin: -1rem auto 0 auto;
+    width: 100%;
+    /* Styling for the projects section */
+  }
+  
+  #projects > h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+    /* Styling for the projects section heading */
+  }
+  
+  .project-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Styling for the project tiles container */
+  }
+  
+  .project-tile > li {
+    width: 28rem;
+    height: 20rem;
+    background-color: yellow;
+    list-style: none;
+    margin: 2rem;
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: flex-end;
+    /* Styling for individual project tiles */
+  }
+  
+  .project-tile > li > a {
+    text-decoration: none;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: violet;
+    color: inherit;
+    /* Styling for project tile links */
+  }
+  
+  #profile-link {
+    font-size: 1.5rem;
+    background-color: violet;
+    text-decoration: none;
+    padding: 1rem;
+    color: inherit;
+    /* Styling for the profile link */
+  }
+  
+  #profile-link:hover {
+    background-color: lightyellow;
+    /* Styling for the profile link on hover */
+  }
+  
+  #projects > div {
+    height: 4rem;
+    /* Styling for project section divider */
+  }
+  
+  #contact {
+    display: flex;
+    flex-direction: column;
+    height: 40rem;
+    justify-content: center;
+    /* Styling for the contact section */
+  }
+  
+  #contact > h1 {
+    font-size: 4rem;
+    /* Styling for the contact section heading */
+  }
+  
+  #contact > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    /* Styling for the contact section list */
+  }
+  
+  #contact li {
+    list-style: none;
+    transition: transform 0.7s ease;
+    /* Styling for individual contact items */
+  }
+  
+  #contact li:hover {
+    cursor: pointer;
+    transform: translateY(10px);
+    /* Styling for contact items on hover */
+  }
+  
+  .divider {
+    width: 100%;
+    height: 0.3rem;
+    background-color: red;
+    /* Styling for the divider element */
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    /* Styling for the footer */
+  }
+  
+  /* Media Query for screens with a max width of 768px */
+  @media (max-width: 768px) {
+    #navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding: 1rem;
+      /* Styling adjustments for the navigation bar on smaller screens */
+    }
+  
+    #navbar > div {
+      width: auto;
+      margin: 1rem 0;
+      /* Styling adjustments for the navigation items on smaller screens */
+    }
+  
+    main {
+      margin-top: 14rem;
+      /* Styling adjustments for the main content on smaller screens */
+    }
+  
+    #welcome-section > p {
+      width: 90%;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      /* Styling adjustments for the welcome section paragraphs on smaller screens */
+    }
+  
+    .project-tile > li {
+      width: 90%;
+      margin: 1rem 0;
+      /* Styling adjustments for project tiles on smaller screens */
+    }
+  
+    footer {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      /* Styling adjustments for the footer on smaller screens */
+    }
+  }
+  
